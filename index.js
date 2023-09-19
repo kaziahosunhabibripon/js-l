@@ -1,13 +1,9 @@
+// function
+(function chai(){
+    // named iife
+    console.log(`DB Connected`);
+})();
 
-
-let newDate = new Date()
-console.log(newDate);
-console.log(newDate.getMonth()+1);
-console.log(newDate.getDay());
-
-`${newDate.getDate()}`
-newDate.toLocaleString('default',{
-    weekday: "long"
-})
-
-console.log(newDate);
+((name)=>{
+    console.log(`Db connected two ${name}`);
+})('ripon');
