@@ -1,20 +1,35 @@
-// controls flow
-const userEmail = []
-if(userEmail){
-    console.log("Got user email");
-} else{
-    console.log("Don't have user email");
+//loop
+
+const greetings = "Hello Kazi, !"
+for (const greet of greetings) {
+    if(greet === " " || greet === "," || greet === "!"){
+        continue
+    }
+    // console.log(greet);
 }
 
-// false values 
-// false , 0, -0, BigInt 0n, "", null, undefined, NaN
-// truthe
-// "0", 'false', " ", [], {}, function(){} 
+const map = new Map()
 
-if(userEmail.length === 0){
-    console.log("Array is empty")
+map.set("BD", "Bangladesh")
+map.set("PK", "Pakistan")
+map.set("UK", "Englad")
+map.set("CN", "China")
+
+// console.log(map);
+
+for (const [ key, val] of map) {
+    console.log(key, '-', val);
+    
 }
-const emptyObj = {}
-if(Object.keys(emptyObj).length===0){
-    console.log("Object is empty");
+const myObj = {
+   JS :"Javascript",
+    cpp :"C++",
+    
+
+}
+
+
+for (const key in myObj) {
+    console.log(`${key} for ${myObj[key]}`);
+    
 }
