@@ -1,35 +1,31 @@
-//loop
+const myNums = [1,2,3,4]
 
-const greetings = "Hello Kazi, !"
-for (const greet of greetings) {
-    if(greet === " " || greet === "," || greet === "!"){
-        continue
-    }
-    // console.log(greet);
-}
-
-const map = new Map()
-
-map.set("BD", "Bangladesh")
-map.set("PK", "Pakistan")
-map.set("UK", "Englad")
-map.set("CN", "China")
-
-// console.log(map);
-
-for (const [ key, val] of map) {
-    console.log(key, '-', val);
+const total = myNums.reduce((acc, curv)=>acc +curv,0)
     
-}
-const myObj = {
-   JS :"Javascript",
-    cpp :"C++",
-    
-
-}
+// console.log(total);
 
 
-for (const key in myObj) {
-    console.log(`${key} for ${myObj[key]}`);
-    
-}
+
+const shoppingCart = [
+    {
+    itemName: "Js course",
+    price: 2999
+   },
+    {
+    itemName: "DSA course",
+    price: 1999
+   },
+    {
+    itemName: "Typescript course",
+    price: 999
+   },
+    {
+    itemName: "NodeJS course",
+    price: 3999
+   }
+]
+
+
+const pay = shoppingCart.reduce((acc, item)=> acc + item.price, 0)
+
+console.log(pay);
