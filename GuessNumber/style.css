@@ -1,0 +1,17 @@
+body{
+    background-color: #090808d4;
+    color: #fff;
+   place-content: center;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.guessSubmit{
+    background-color: rgba(18, 1, 14, 0.556);
+    border-radius: 9px;
+    color: #fff;
+    padding: 12px;
+    outline: none;
+}
