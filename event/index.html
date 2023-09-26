@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img id="photoshop" width="200px" 
+                src="https://images.pexels.com/photos/18510658/pexels-photo-18510658.jpeg?
+                auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshop">
+            </li>
+            <li>
+                <img id="owl" width="200px" 
+                src="https://images.pexels.com/photos/18510656/pexels-photo-18510656.jpeg?
+                auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                alt="photoshop">
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById("images").addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
+    document.getElementById("owl").addEventListener('click', function(e){
+        console.log("owl clicked ");
+        e.stopPropagation()
+    }, false)
+
+    // type , timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY, altkey, ctrkey, shiftkey, keycode
+</script>
+</html>
