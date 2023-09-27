@@ -3,7 +3,10 @@ body{
     color: #fff;
 }
 table, th, td{
-    border: 1px soild #e7e7e7;
+    border: 1px solid #fff;   
+}
+td{
+    padding: 0.1rem 0.5rem;
 }
 .project{
     background-color: #1c1c1c;
