@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function outer(){
+        let username = "Ripon";
+        console.log("inner", name);
+        function inner(){
+            let name = "chrome"
+            console.log( name, "inner", username);
+        }
+        function innerTwo(){
+            console.log(name,  "inner", username);
+
+        }
+        inner();
+        innerTwo()
+    }
+    outer()
+    console.log( "outer", username);
+    
+</script>
+</html>
