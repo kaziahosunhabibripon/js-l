@@ -1,18 +1,19 @@
-const user = {
-    username: "Ripon",
-    loginCount: 8,
-    signedIn: true,
+function User(username, logincount, isLoggedIn){
+    this.username= username
+    this.logincount = logincount
+    this.isLoggedIn = isLoggedIn
 
-    getUserDetails: function(){
-        // console.log(`UserName: ${this.userName}`);
-        console.log(this);
+
+    this.greeting = function(){
+        console.log(`Welcome ${this.username}`);
     }
+    return this
 }
 
 
-console.log(user.username);
-// console.log(user.getUserDetails());
-console.log(this);
+const userOne = new User("Ripon", 12, true)
+const userTwo =  new User("Turan", 2, false)
+console.log(userOne.constructor);
+console.log(userOne instanceof User);
 
-const promiseOne = new Promise()
-const date = new Date()
+
